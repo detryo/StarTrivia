@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3671651C2472E02C009CA5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651B2472E02C009CA5DB /* AppDelegate.swift */; };
+		3671651E2472E02C009CA5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651D2472E02C009CA5DB /* SceneDelegate.swift */; };
+		367165202472E02C009CA5DB /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651F2472E02C009CA5DB /* SelectPersonVC.swift */; };
+		367165232472E02C009CA5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367165212472E02C009CA5DB /* Main.storyboard */; };
+		367165252472E02D009CA5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367165242472E02D009CA5DB /* Assets.xcassets */; };
+		367165282472E02D009CA5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367165262472E02D009CA5DB /* LaunchScreen.storyboard */; };
+		367165462472E686009CA5DB /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 367165432472E686009CA5DB /* Starjedi.ttf */; };
+		367165472472E686009CA5DB /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 367165442472E686009CA5DB /* Starjhol.ttf */; };
+		367165482472E686009CA5DB /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 367165452472E686009CA5DB /* Starjout.ttf */; };
+		36D6D8112473DC1E00AA8AFA /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6D8102473DC1E00AA8AFA /* BlackBgView.swift */; };
+		36D6D8142473DDA900AA8AFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6D8132473DDA900AA8AFA /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		367165182472E02C009CA5DB /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3671651B2472E02C009CA5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3671651D2472E02C009CA5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3671651F2472E02C009CA5DB /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
+		367165222472E02C009CA5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		367165242472E02D009CA5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		367165272472E02D009CA5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		367165292472E02D009CA5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		367165432472E686009CA5DB /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		367165442472E686009CA5DB /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		367165452472E686009CA5DB /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		36D6D8102473DC1E00AA8AFA /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
+		36D6D8132473DDA900AA8AFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		367165152472E02C009CA5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3671650F2472E02C009CA5DB = {
+			isa = PBXGroup;
+			children = (
+				3671651A2472E02C009CA5DB /* StarTrivia */,
+				367165192472E02C009CA5DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		367165192472E02C009CA5DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				367165182472E02C009CA5DB /* StarTrivia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3671651A2472E02C009CA5DB /* StarTrivia */ = {
+			isa = PBXGroup;
+			children = (
+				36D6D80E2473D83300AA8AFA /* Model */,
+				36D6D80F2473D83900AA8AFA /* View */,
+				36D6D80D2473D82C00AA8AFA /* Controller */,
+				3671652F2472E038009CA5DB /* Resources */,
+				36D6D8122473DD8A00AA8AFA /* Utilities */,
+				3671651B2472E02C009CA5DB /* AppDelegate.swift */,
+				3671651D2472E02C009CA5DB /* SceneDelegate.swift */,
+				367165212472E02C009CA5DB /* Main.storyboard */,
+				367165242472E02D009CA5DB /* Assets.xcassets */,
+				367165262472E02D009CA5DB /* LaunchScreen.storyboard */,
+				367165292472E02D009CA5DB /* Info.plist */,
+			);
+			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		3671652F2472E038009CA5DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				367165302472E03F009CA5DB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		367165302472E03F009CA5DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				367165432472E686009CA5DB /* Starjedi.ttf */,
+				367165442472E686009CA5DB /* Starjhol.ttf */,
+				367165452472E686009CA5DB /* Starjout.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		36D6D80D2473D82C00AA8AFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3671651F2472E02C009CA5DB /* SelectPersonVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36D6D80E2473D83300AA8AFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36D6D8102473DC1E00AA8AFA /* BlackBgView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36D6D80F2473D83900AA8AFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36D6D8122473DD8A00AA8AFA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				36D6D8132473DDA900AA8AFA /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		367165172472E02C009CA5DB /* StarTrivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3671652C2472E02D009CA5DB /* Build configuration list for PBXNativeTarget "StarTrivia" */;
+			buildPhases = (
+				367165142472E02C009CA5DB /* Sources */,
+				367165152472E02C009CA5DB /* Frameworks */,
+				367165162472E02C009CA5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarTrivia;
+			productName = StarTrivia;
+			productReference = 367165182472E02C009CA5DB /* StarTrivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		367165102472E02C009CA5DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Cristian Sedano Arenas";
+				TargetAttributes = {
+					367165172472E02C009CA5DB = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 367165132472E02C009CA5DB /* Build configuration list for PBXProject "StarTrivia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3671650F2472E02C009CA5DB;
+			productRefGroup = 367165192472E02C009CA5DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				367165172472E02C009CA5DB /* StarTrivia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		367165162472E02C009CA5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				367165282472E02D009CA5DB /* LaunchScreen.storyboard in Resources */,
+				367165252472E02D009CA5DB /* Assets.xcassets in Resources */,
+				367165462472E686009CA5DB /* Starjedi.ttf in Resources */,
+				367165472472E686009CA5DB /* Starjhol.ttf in Resources */,
+				367165482472E686009CA5DB /* Starjout.ttf in Resources */,
+				367165232472E02C009CA5DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		367165142472E02C009CA5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D6D8142473DDA900AA8AFA /* Constants.swift in Sources */,
+				367165202472E02C009CA5DB /* SelectPersonVC.swift in Sources */,
+				36D6D8112473DC1E00AA8AFA /* BlackBgView.swift in Sources */,
+				3671651C2472E02C009CA5DB /* AppDelegate.swift in Sources */,
+				3671651E2472E02C009CA5DB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		367165212472E02C009CA5DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				367165222472E02C009CA5DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		367165262472E02D009CA5DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				367165272472E02D009CA5DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3671652A2472E02D009CA5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3671652B2472E02D009CA5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3671652D2472E02D009CA5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 347CFEP3N9;
+				INFOPLIST_FILE = StarTrivia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristian.StarTrivia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3671652E2472E02D009CA5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 347CFEP3N9;
+				INFOPLIST_FILE = StarTrivia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cristian.StarTrivia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		367165132472E02C009CA5DB /* Build configuration list for PBXProject "StarTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3671652A2472E02D009CA5DB /* Debug */,
+				3671652B2472E02D009CA5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3671652C2472E02D009CA5DB /* Build configuration list for PBXNativeTarget "StarTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3671652D2472E02D009CA5DB /* Debug */,
+				3671652E2472E02D009CA5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 367165102472E02C009CA5DB /* Project object */;
+}
