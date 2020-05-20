@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3630DE5B2475286A005A3032 /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE5A2475286A005A3032 /* PersonAPI.swift */; };
+		3630DE5D24753212005A3032 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE5C24753212005A3032 /* Person.swift */; };
 		3671651C2472E02C009CA5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651B2472E02C009CA5DB /* AppDelegate.swift */; };
 		3671651E2472E02C009CA5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651D2472E02C009CA5DB /* SceneDelegate.swift */; };
 		367165202472E02C009CA5DB /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651F2472E02C009CA5DB /* SelectPersonVC.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3630DE5A2475286A005A3032 /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
+		3630DE5C24753212005A3032 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		367165182472E02C009CA5DB /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3671651B2472E02C009CA5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3671651D2472E02C009CA5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3630DE59247527F5005A3032 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3671650F2472E02C009CA5DB = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +82,7 @@
 				36D6D80D2473D82C00AA8AFA /* Controller */,
 				3671652F2472E038009CA5DB /* Resources */,
 				36D6D8122473DD8A00AA8AFA /* Utilities */,
+				3630DE59247527F5005A3032 /* Services */,
 				3671651B2472E02C009CA5DB /* AppDelegate.swift */,
 				3671651D2472E02C009CA5DB /* SceneDelegate.swift */,
 				367165212472E02C009CA5DB /* Main.storyboard */,
@@ -85,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				367165302472E03F009CA5DB /* Fonts */,
+				3630DE5A2475286A005A3032 /* PersonAPI.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				36D6D8102473DC1E00AA8AFA /* BlackBgView.swift */,
+				3630DE5C24753212005A3032 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,7 +222,9 @@
 				367165202472E02C009CA5DB /* SelectPersonVC.swift in Sources */,
 				36D6D8112473DC1E00AA8AFA /* BlackBgView.swift in Sources */,
 				3671651C2472E02C009CA5DB /* AppDelegate.swift in Sources */,
+				3630DE5D24753212005A3032 /* Person.swift in Sources */,
 				3671651E2472E02C009CA5DB /* SceneDelegate.swift in Sources */,
+				3630DE5B2475286A005A3032 /* PersonAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
