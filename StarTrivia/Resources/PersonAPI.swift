@@ -7,15 +7,37 @@
 //
 
 import Foundation
+import Alamofire
 
 class PersonAPI {
     
+    // Web request with Alamofire
+    func getRandomPersonUrlAlamo(id: Int, completion: @escaping PersonResponseComplition) {
+        
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+        
+        AF.request(url).responseJSON { (response) in
+            
+            if let error = response.error {
+                debugPrint(error.localizedDescription)
+                completion(nil)
+                return
+            }
+            
+            guard let json = response.value as? [String : Any] else { return completion(nil) }
+            
+            let person = self.parsePersonManual(json: json)
+            completion(person)
+        }
+    }
+    
+    // Wen request with URL Session
     func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseComplition)  {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-        
+            
         guard error == nil else {
             debugPrint(error.debugDescription)
             completion(nil)

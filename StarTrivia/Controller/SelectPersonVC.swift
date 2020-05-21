@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SelectPersonVC: UIViewController {
     
@@ -27,7 +28,7 @@ class SelectPersonVC: UIViewController {
         
         let random = Int.random(in: 1...87)
         
-        personApi.getRandomPersonUrlSession(id: random) { (person) in
+        personApi.getRandomPersonUrlAlamo(id: random) { (person) in
             
             if let person = person {
                 
