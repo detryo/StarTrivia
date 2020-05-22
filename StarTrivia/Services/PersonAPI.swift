@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class PersonAPI {
     
-    // Web request with Alamofire and SwiftyJSON
+    // Web request with Alamofire and Codable
     func getRandomPersonUrlAlamo(id: Int, completion: @escaping PersonResponseComplition) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
@@ -27,10 +27,11 @@ class PersonAPI {
             
             guard let data = response.data else { return completion(nil) }
             
+            let jsonDecoder = JSONDecoder()
+            
             do {
                 
-                let json = try JSON(data: data)
-                let person = self.parsePersonSwifty(json: json)
+                let person = try jsonDecoder.decode(Person.self, from: data)
                 completion(person)
                 
             } catch {
@@ -53,6 +54,6 @@ class PersonAPI {
         let vehicleUrls = json["vehicles"].arrayValue.map({ $0.stringValue })
         let starshipUrls = json["starships"].arrayValue.map({ $0.stringValue })
         
-        return Person(name: name, height: height, mass: mass, hair: hair, birthYear: birthYear, gender: gender, homeworldURL: homeworldUrl, filmURL: filmUrls, vehiclesURL: vehicleUrls, starshipsURL: starshipUrls)
+        return Person(name: name, height: height, mass: mass, hair: hair, birthYear: birthYear, gender: gender, homeworldUrl: homeworldUrl, filmUrls: filmUrls, vehicleUrls: vehicleUrls, starshipUrls: starshipUrls)
     }
 }
