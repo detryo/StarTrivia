@@ -24,6 +24,7 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var filmButton: UIButton!
     
     var personApi = PersonAPI()
+    var person : Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class SelectPersonVC: UIViewController {
             
             if let person = person {
                 self.setupView(person: person)
+                self.person = person
             }
         }
     }
@@ -50,34 +52,21 @@ class SelectPersonVC: UIViewController {
         birthYear.text = person.birthYear
         genderLabel.text = person.gender
         
-        // Asi lo hace un profesional
         homeworldButton.isEnabled = !person.homeworldUrl.isEmpty
         vehiclesButton.isEnabled = !person.vehicleUrls.isEmpty
         spaceshipButton.isEnabled = !person.starshipUrls.isEmpty
         filmButton.isEnabled = !person.filmUrls.isEmpty
     }
     
-    @IBAction func homeworldClicked(_ sender: UIButton) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
+        if var destination = segue.destination as? PersonProtocol {
+            destination.person = person
+        }
     }
+}
+
+protocol PersonProtocol {
     
-    @IBAction func vehiclesClicked(_ sender: UIButton) {
-        
-        
-    }
-    
-    
-    @IBAction func starshipClicked(_ sender: UIButton) {
-        
-        
-    }
-    
-    
-    @IBAction func filmClicked(_ sender: UIButton) {
-        
-        
-    }
-    
-    
+    var person : Person! { get set }
 }
