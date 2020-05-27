@@ -14,6 +14,8 @@
 		360B995F2478155E009B248B /* FilmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360B995E2478155E009B248B /* FilmVC.swift */; };
 		3630DE5B2475286A005A3032 /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE5A2475286A005A3032 /* PersonAPI.swift */; };
 		3630DE5D24753212005A3032 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE5C24753212005A3032 /* Person.swift */; };
+		364AE223247EAFEE000E45D2 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AE222247EAFEE000E45D2 /* Homeworld.swift */; };
+		364AE225247EB0D7000E45D2 /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AE224247EB0D7000E45D2 /* HomeworldAPI.swift */; };
 		3671651C2472E02C009CA5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651B2472E02C009CA5DB /* AppDelegate.swift */; };
 		3671651E2472E02C009CA5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651D2472E02C009CA5DB /* SceneDelegate.swift */; };
 		367165202472E02C009CA5DB /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3671651F2472E02C009CA5DB /* SelectPersonVC.swift */; };
@@ -36,6 +38,8 @@
 		360B995E2478155E009B248B /* FilmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmVC.swift; sourceTree = "<group>"; };
 		3630DE5A2475286A005A3032 /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
 		3630DE5C24753212005A3032 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		364AE222247EAFEE000E45D2 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		364AE224247EB0D7000E45D2 /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
 		367165182472E02C009CA5DB /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3671651B2472E02C009CA5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3671651D2472E02C009CA5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3630DE5A2475286A005A3032 /* PersonAPI.swift */,
+				364AE224247EB0D7000E45D2 /* HomeworldAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -144,8 +149,8 @@
 		36D6D80E2473D83300AA8AFA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				36D6D8102473DC1E00AA8AFA /* BlackBgView.swift */,
 				3630DE5C24753212005A3032 /* Person.swift */,
+				364AE222247EAFEE000E45D2 /* Homeworld.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		36D6D80F2473D83900AA8AFA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				36D6D8102473DC1E00AA8AFA /* BlackBgView.swift */,
 				360B99562477EA42009B248B /* FadeEnableButton.swift */,
 			);
 			path = View;
@@ -305,12 +311,14 @@
 				36D6D8142473DDA900AA8AFA /* Constants.swift in Sources */,
 				367165202472E02C009CA5DB /* SelectPersonVC.swift in Sources */,
 				36D6D8112473DC1E00AA8AFA /* BlackBgView.swift in Sources */,
+				364AE225247EB0D7000E45D2 /* HomeworldAPI.swift in Sources */,
 				360B995B24781546009B248B /* VehiclesVC.swift in Sources */,
 				360B9959247814EA009B248B /* HomeworldVC.swift in Sources */,
 				3671651C2472E02C009CA5DB /* AppDelegate.swift in Sources */,
 				360B99572477EA42009B248B /* FadeEnableButton.swift in Sources */,
 				3630DE5D24753212005A3032 /* Person.swift in Sources */,
 				3671651E2472E02C009CA5DB /* SceneDelegate.swift in Sources */,
+				364AE223247EAFEE000E45D2 /* Homeworld.swift in Sources */,
 				3630DE5B2475286A005A3032 /* PersonAPI.swift in Sources */,
 				360B995D24781553009B248B /* StarshipVC.swift in Sources */,
 			);
