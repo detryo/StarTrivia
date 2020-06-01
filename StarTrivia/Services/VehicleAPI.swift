@@ -1,39 +1,41 @@
 //
-//  HomeworldAPI.swift
+//  VehicleAPI.swift
 //  StarTrivia
 //
-//  Created by Cristian Sedano Arenas on 27/05/2020.
+//  Created by Cristian Sedano Arenas on 01/06/2020.
 //  Copyright © 2020 Cristian Sedano Arenas. All rights reserved.
 //
 
 import Foundation
 import Alamofire
 
-class HomeworldAPI {
+class VehicleApi {
     
-    func getHomeworld(url: String, complition: @escaping HomeworldResponseComplition) {
+    func getVehicle(url: String, completion: @escaping VehicleResponseCompletion) {
         
         guard let url = URL(string: url) else { return }
         
         AF.request(url).responseJSON { (response) in
             
             if let error = response.error {
+                
                 debugPrint(error.localizedDescription)
-                complition(nil)
+                completion(nil)
                 return
             }
             
-            guard let data = response.data else { return complition(nil) }
+            guard let data = response.data else { return completion(nil) }
+            
             let jsonDecoder = JSONDecoder()
             
             do {
+                let vehicle = try jsonDecoder.decode(Vehicle.self, from: data)
+                completion(vehicle)
                 
-                let homeworld = try jsonDecoder.decode(Homeworld.self, from: data)
-                complition(homeworld)
             } catch {
                 
                 debugPrint(error.localizedDescription)
-                complition(nil)
+                completion(nil)
             }
         }
     }
