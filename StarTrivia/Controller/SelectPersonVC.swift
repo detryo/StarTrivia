@@ -17,11 +17,11 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var hairLabel: UILabel!
     @IBOutlet weak var birthYear: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
-    
     @IBOutlet weak var homeworldButton: UIButton!
     @IBOutlet weak var vehiclesButton: UIButton!
     @IBOutlet weak var spaceshipButton: UIButton!
     @IBOutlet weak var filmButton: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var personApi = PersonAPI()
     var person : Person!
@@ -33,9 +33,11 @@ class SelectPersonVC: UIViewController {
     @IBAction func randomClicked(_ sender: Any) {
         
         let random = Int.random(in: 1...87)
+        spinner.startAnimating()
         
         personApi.getRandomPersonUrlAlamo(id: random) { (person) in
             
+            self.spinner.stopAnimating()
             if let person = person {
                 self.setupView(person: person)
                 self.person = person
