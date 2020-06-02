@@ -19,7 +19,7 @@ class FadeEnableButton : UIButton {
             } else {
                 
                 UIView.animate(withDuration: 0.2) {
-                    self.alpha = 1.5
+                    self.alpha = 0.5
                 }
             }
         }

@@ -690,9 +690,6 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPp-Lt-jJK">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="50" id="Ntd-eu-j9L"/>
-                                                        </constraints>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Name:">
                                                                 <attributes>
@@ -704,7 +701,7 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LOB-KO-eHI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LOB-KO-eHI">
                                                         <rect key="frame" x="58" y="0.0" width="316" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
@@ -723,10 +720,7 @@
                                                 <rect key="frame" x="0.0" y="34" width="374" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAP-hS-J9A">
-                                                        <rect key="frame" x="0.0" y="0.0" width="53" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="53" id="5rf-v9-Tr1"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Model:">
                                                                 <attributes>
@@ -738,14 +732,14 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvl-R6-Lt6">
-                                                        <rect key="frame" x="61" y="0.0" width="313" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gvl-R6-Lt6">
+                                                        <rect key="frame" x="60.5" y="0.0" width="313.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <font key="NSFont" size="17" name="StarJedi"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
                                                         </attributedString>
@@ -757,12 +751,9 @@
                                                 <rect key="frame" x="0.0" y="68" width="374" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcm-2a-zgM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="107" id="DDo-NX-nDT"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="26"/>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="Manufacturer:">
+                                                            <fragment content="Maker:">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <font key="NSFont" size="17" name="StarJedi"/>
@@ -772,8 +763,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uE-Ah-PPy">
-                                                        <rect key="frame" x="115" y="0.0" width="259" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3uE-Ah-PPy">
+                                                        <rect key="frame" x="60.5" y="0.0" width="313.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
@@ -791,10 +782,7 @@
                                                 <rect key="frame" x="0.0" y="102" width="374" height="25.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRa-Ow-UGd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="25.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="43" id="Vhh-Qn-oDx"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="25.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Cost:">
                                                                 <attributes>
@@ -806,8 +794,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-oz-E8Q">
-                                                        <rect key="frame" x="51" y="0.0" width="323" height="25.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iC-oz-E8Q">
+                                                        <rect key="frame" x="49" y="0.0" width="325" height="25.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
@@ -825,10 +813,7 @@
                                                 <rect key="frame" x="0.0" y="135.5" width="374" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgA-UN-3TD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="58" id="8tv-FI-mPB"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Length:">
                                                                 <attributes>
@@ -840,8 +825,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXK-py-JK6">
-                                                        <rect key="frame" x="66" y="0.0" width="308" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXK-py-JK6">
+                                                        <rect key="frame" x="65.5" y="0.0" width="308.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
@@ -859,10 +844,7 @@
                                                 <rect key="frame" x="0.0" y="169.5" width="374" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOC-qm-0ox">
-                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="55" id="OTi-Ja-HMs"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Speed:">
                                                                 <attributes>
@@ -874,8 +856,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM3-Ra-m2o">
-                                                        <rect key="frame" x="63" y="0.0" width="311" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM3-Ra-m2o">
+                                                        <rect key="frame" x="62.5" y="0.0" width="311.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
@@ -893,10 +875,7 @@
                                                 <rect key="frame" x="0.0" y="203.5" width="374" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkl-PF-U7h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="26"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="45" id="QnW-Ar-GhF"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Crew:">
                                                                 <attributes>
@@ -908,8 +887,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTj-x3-db6">
-                                                        <rect key="frame" x="53" y="0.0" width="321" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTj-x3-db6">
+                                                        <rect key="frame" x="52.5" y="0.0" width="321.5" height="26"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
@@ -926,11 +905,8 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8xR-0g-5Wr">
                                                 <rect key="frame" x="0.0" y="237.5" width="374" height="42.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfE-Ho-lRs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="42.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="97" id="oOX-Fj-6Ka"/>
-                                                        </constraints>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfE-Ho-lRs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="42.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Passangers:">
                                                                 <attributes>
@@ -942,8 +918,8 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIh-Oh-3ep">
-                                                        <rect key="frame" x="105" y="0.0" width="269" height="42.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIh-Oh-3ep">
+                                                        <rect key="frame" x="101.5" y="0.0" width="272.5" height="42.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="--">
                                                                 <attributes>
@@ -969,7 +945,7 @@
                                     <constraint firstAttribute="height" constant="300" id="udl-uH-IIW"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QnN-IR-VMQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QnN-IR-VMQ" customClass="FadeEnableButton" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="830.5" width="78" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -986,7 +962,7 @@
                                     <action selector="previousClicked:" destination="7vq-am-lSz" eventType="touchUpInside" id="bcF-ip-P9w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpi-p6-nie">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpi-p6-nie" customClass="FadeEnableButton" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="352" y="830.5" width="42" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
