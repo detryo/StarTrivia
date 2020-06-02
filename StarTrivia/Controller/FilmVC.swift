@@ -10,6 +10,15 @@ import UIKit
 
 class FilmVC: UIViewController, PersonProtocol {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var episodeLabel: UIStackView!
+    @IBOutlet weak var directorLabel: UILabel!
+    @IBOutlet weak var producerLabel: UILabel!
+    @IBOutlet weak var releaseLabel: UILabel!
+    @IBOutlet weak var previousButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var crawLabel: UITextView!
+    
     var person: Person!
 
     override func viewDidLoad() {
@@ -17,5 +26,21 @@ class FilmVC: UIViewController, PersonProtocol {
 
         
     }
-    
+        
+    func setButtonState() {
+
+    }
+        
+    @IBAction func previousClicked(_ sender: Any) {
+            
+        
+        setButtonState()
+    }
+        
+        
+    @IBAction func nextClicked(_ sender: Any) {
+            
+        
+        setButtonState()
+    }
 }
